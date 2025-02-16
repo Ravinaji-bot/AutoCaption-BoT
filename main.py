@@ -1,29 +1,29 @@
 import pyrogram, os, asyncio
 
-try: app_id = int(os.environ.get("app_id", None))
+try: app_id = int(os.environ.get("24358501")
 except Exception as app_id: print(f"⚠️ App ID Invalid {app_id}")
-try: api_hash = os.environ.get("api_hash", None)
+try: api_hash = os.environ.get("fa51ce8876c215d8a76c98c755e6d2d3")
 except Exception as api_id: print(f"⚠️ Api Hash Invalid {api_hash}")
-try: bot_token = os.environ.get("bot_token", None)
+try: bot_token = os.environ.get("7290781487:AAEiqpdP7wmm4Zczh5jvH7rWuth5SYT_2ko")
 except Exception as bot_token: print(f"⚠️ Bot Token Invalid {bot_token}")
-try: custom_caption = os.environ.get("custom_caption", "`{file_name}`")
+try: custom_caption = os.environ.get("custom_caption", "`{<b><a href="https://telegram.me/Requiest_your_faw">{file_caption}</a></b>...Share With Friends >>>}`")
 except Exception as custom_caption: print(f"⚠️ Custom Caption Invalid {custom_caption}")
 
 AutoCaptionBot = pyrogram.Client(
-   name="AutoCaptionBot", api_id=app_id, api_hash=api_hash, bot_token=bot_token)
+   name="CMAutoCaptionBot", api_id=app_id, api_hash=api_hash, bot_token=bot_token)
 
 start_message = """
 <b>👋Hello {}</b>
-<b>I am an AutoCaption bot</b>
+<b>I am an CMAutoCaption bot</b>
 <b>All you have to do is add me to your channel and I will show you my power</b>
-<b>@Mo_Tech_YT</b>"""
+<b>@CM_Developer_bot</b>"""
 
 about_message = """
-<b>• Name : [AutoCaption V1](t.me/{username})</b>
-<b>• Developer : [Muhammed](https://github.com/PR0FESS0R-99)
+<b>• Name : [CMAutoCaption](t.me/{username})</b>
+<b>• Developer :(@CM_Developer)
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
-<b>• Updates : <a href=https://t.me/Mo_Tech_YT>Click Here</a></b>
+<b>• Updates : <a href=https://t.me/Finderman>Click Here</a></b>
 <b>• Source Code : <a href=https://github.com/PR0FESS0R-99/AutoCaption-Bot>Click Here</a></b>"""
 
 @AutoCaptionBot.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))
